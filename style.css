@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Young+Serif&display=swap");
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(https://wallpapers.com/images/hd/antique-pocket-watch-9y0trinqpb1kh0h1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 20px 0;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+  background: rgba(255, 255, 225, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.timer-display {
+  position: relative;
+  color: #fff;
+  width: 92%;
+  left: 4%;
+  font-size: 60px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+.buttons {
+  width: 90%;
+  margin: 45px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  height: 45px;
+  width: 100px;
+  background-color: green;
+  color: black;
+  border: none;
+  font-family: "Young Serif", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button1:active {
+  scale: 0.95;
+}
+
+.buttons button:nth-last-child(3) {
+  background-color: red;
+}
+
+.button2:active {
+  scale: 0.95;
+}
+
+.buttons button:nth-last-child(2) {
+  background-color: yellow;
+}
+
+.button3:active {
+  scale: 0.95;
+}
+
+.buttons button:nth-last-child(1) {
+  background-color: #fff;
+}
+
+.button4:active {
+  scale: 0.95;
+}
+
+.buttons button:hover {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.laps {
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+
+#lap-list {
+  list-style: none;
+  padding: 0;
+}
+
+#lap-list li {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lap-list li:nth-child(even) {
+  background: rgba(200, 200, 200, 0.8);
+}
+
+#lap-list li:nth-child(odd) {
+  background: rgba(230, 230, 230, 0.8);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    min-width: auto;
+    padding: 20px;
+  }
+
+  .timer-display {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .buttons button {
+    font-size: 12px;
+    height: 35px;
+    width: 50px;
+  }
+}
